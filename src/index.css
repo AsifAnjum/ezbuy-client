@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-error {
+  @apply font-semibold text-red-500;
+}
+
+.profile-input {
+  @apply w-full rounded-md input input-bordered bg-slate-100 text-slate-500 focus:outline-none focus:border-green-400;
+}
+
+.section-subtitle {
+  @apply max-[300px]:text-xl max-[400px]:text-3xl text-4xl font-bold tracking-wide;
+}
+
+/* hero slider  */
+.custom-dots ul {
+  @apply flex justify-center gap-1;
+}
+
+.custom-dots button {
+  @apply w-4 h-4 rounded-full bg-gray-400;
+}
+.custom-dots .slick-active button {
+  @apply bg-pink-400 border-pink-400;
+}
+
+.slider-item {
+  width: 100%; /* Make each slide take the full width */
+  flex: 0 0 auto; /* Prevent shrinking */
+}
+
+.image-bg-remove {
+  @apply mix-blend-multiply contrast-125 brightness-105;
+}
