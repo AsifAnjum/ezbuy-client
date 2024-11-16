@@ -6,13 +6,13 @@ import {
 } from "../../../redux/features/product/productApi";
 import ItemNotFound from "../../../component/ui/error/ItemNotFound";
 
-import TableLoader from "../../../component/ui/loader/tableLoader";
 import { useState, useRef } from "react";
 import Pagination from "../../../component/Pagination/Pagination";
 import useIsAdmin from "../../../hooks/useIsAdmin";
 import PermissionModal from "../../../modal/PermissionModal";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
+import TableLoader from "../../../component/ui/loader/TableLoader";
 
 const ManageProducts = () => {
   const [page, setPage] = useState(1);
