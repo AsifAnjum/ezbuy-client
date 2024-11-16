@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 import ItemNotFound from "../../../component/ui/error/ItemNotFound";
 
-import TableLoader from "../../../component/ui/loader/tableLoader";
 import { useGetUsersQuery } from "../../../redux/features/user/userApi";
 import { useState, useRef } from "react";
 import Pagination from "../../../component/Pagination/Pagination";
+import TableLoader from "../../../component/ui/loader/TableLoader";
 
 const ManageUsers = () => {
   const [page, setPage] = useState(1);
