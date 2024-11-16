@@ -6,7 +6,7 @@ const ReviewModal = ({ confirm, productId }) => {
   const [userRating, setUserRating] = useState(0);
   const [comment, setComment] = useState("");
 
-  const [postProductReview, { isLoading, isSuccess, error, reset }] =
+  const [postProductReview, { isLoading, isSuccess, error, reset, isError }] =
     usePostProductReviewMutation();
 
   useEffect(() => {
@@ -16,9 +16,13 @@ const ReviewModal = ({ confirm, productId }) => {
   }, [reset]);
 
   let errorContent;
-  if (error?.data) {
+  if (isError) {
     if (error.status === 409) {
       errorContent = "You have already reviewed this product";
+    } else if (error.status === 403) {
+      errorContent = "You are not authorized to review this product";
+    } else if (error.status === 401) {
+      errorContent = "You must be logged in to review this product";
     } else {
       errorContent = "An error occurred. Please try again later";
     }

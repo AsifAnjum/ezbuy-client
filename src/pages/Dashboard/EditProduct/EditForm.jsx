@@ -248,7 +248,10 @@ const EditForm = ({ product }) => {
 
         <p className="font-semibold">
           Upload Images
-          <span className="tooltip tooltip-error" data-tip="Maximum 4 images">
+          <span
+            className="tooltip tooltip-error"
+            data-tip="Maximum 4 images(Max 5mb)"
+          >
             <PiInfoBold className="inline mb-1 ml-1 " fill="red" />
           </span>
         </p>
@@ -272,7 +275,7 @@ const EditForm = ({ product }) => {
               type="file"
               className="opacity-0"
               multiple
-              size={8}
+              size={5}
               disabled={productImages.length + prevImages.length >= 4}
               {...register("images", {
                 onChange: handleImages,
