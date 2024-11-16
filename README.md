@@ -1,5 +1,7 @@
 # EZBuy E-commerce Platform
 
+### Live Link: https://ezbuy-pro.vercel.app/
+
 ## Project Overview
 
 EZBuy is a comprehensive e-commerce platform that provides a seamless shopping experience for users, featuring advanced functionalities such as product browsing, wishlist management, cart handling, secure checkout using Stripe, and user dashboards. The platform also includes an admin panel for managing users, products, orders, and other administrative tasks.
