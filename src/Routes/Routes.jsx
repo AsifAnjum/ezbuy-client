@@ -100,21 +100,19 @@ export const router = createBrowserRouter([
       {
         path: "/checkout",
         element: (
-          <>
+          <PrivateRoute>
             <PageTitle title="EZ Buy | Checkout" />
             <Checkout />
-          </>
+          </PrivateRoute>
         ),
       },
       {
         path: "payment",
         element: (
-          <>
-            <PrivateRoute>
-              <PageTitle title="EZ Buy | Payment" />
-              <Payment />
-            </PrivateRoute>
-          </>
+          <PrivateRoute>
+            <PageTitle title="EZ Buy | Payment" />
+            <Payment />
+          </PrivateRoute>
         ),
       },
 

@@ -235,11 +235,11 @@ const OrderData = ({ billingDetails, userEmail, orderData, redirectFrom }) => {
           Cash On Delivery
         </label>
 
-        <div>
+        <div className="flex flex-wrap gap-2">
           <input
             type="text"
             ref={couponRef}
-            className="mr-2 rounded-sm input input-bordered focus:outline-none focus:ring-1 focus:ring-neutral"
+            className="rounded-sm input input-bordered focus:outline-none focus:ring-1 focus:ring-neutral"
             placeholder="Coupon Code"
           />
           <button

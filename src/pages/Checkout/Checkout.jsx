@@ -27,7 +27,7 @@ const Checkout = () => {
   if (!orderData) return null;
 
   return (
-    <div className="mt-20 ">
+    <div className="px-4 mt-20">
       <div className="text-sm breadcrumbs">
         <ul className="text-slate-500">
           <li>
