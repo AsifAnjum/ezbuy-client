@@ -119,7 +119,7 @@ const Navbar = () => {
                 />
               </div>
 
-              <ul className="dropdown-content menu bg-gradient-to-tr from-[#c4b0c7] via-slate-400/75 to-slate-400 from-10% rounded-box z-[1] w-52 p-2 text-white ">
+              <ul className="dropdown-content group-hover:visible group-hover:opacity-100  menu bg-gradient-to-tr from-[#c4b0c7] via-slate-400/75 to-slate-400 from-10% rounded-box z-[1] w-52 p-2 text-white ">
                 <li>
                   <Link to="/dashboard/profile">
                     <GrUser size={20} />

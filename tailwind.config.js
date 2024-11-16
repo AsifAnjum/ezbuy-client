@@ -47,6 +47,15 @@ export default {
             transform: "scale3d(1, 1, 1)",
           },
         },
+        "slide-in-down": {
+          "0%": {
+            visibility: "visible",
+            transform: "translate3d(0, -100%, 0)",
+          },
+          "100%": {
+            transform: "translate3d(0, 0, 0)",
+          },
+        },
       },
       animation: {
         ring: "wiggle 1s ease-in-out 2",
@@ -55,6 +64,7 @@ export default {
         shake: "wiggle 1s ease-in-out 1",
         fadeInLeft: "fade-in-left 1s ease-in-out 0.25s infinite",
         tada: "tada 1s ease-in-out 0.25s 1",
+        slideindown: "slide-in-down 1s ease-in-out 0.25s 1",
       },
     },
   },
