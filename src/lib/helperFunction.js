@@ -20,9 +20,9 @@ export const timeAgo = (dateInput) => {
   const now = new Date();
   const date = new Date(dateInput);
 
-  if (date > now) return "few seconds ago";
-
   const seconds = Math.floor((now - date) / 1000);
+
+  if (seconds < 5) return "just now";
 
   if (seconds < 60) return `${seconds} seconds ago`;
 
@@ -54,34 +54,6 @@ export const tokenDecode = (token) => {
     return null;
   }
 };
-
-//user-role
-// exports.admin = "admin";
-// exports.moderator = "moderator";
-// exports.productManager = "product-manager";
-// exports.user = "user";
-// exports.active = "active";
-// exports.inactive = "inactive";
-// exports.blocked = "blocked";
-
-// //product
-// exports.continued = "continued";
-// exports.discontinued = "discontinued";
-
-// //order
-// exports.pending = "pending";
-// exports.onTheWay = "onTheWay";
-// exports.delivered = "delivered";
-// exports.canceled = "canceled";
-// exports.reached = "reached";
-
-// //payment status
-// exports.success = "success";
-// exports.failed = "failed";
-
-// //message
-// exports.solved = "solved";
-// exports.rejected = "rejected";
 
 export const statusColor = (status) => {
   switch (status) {
