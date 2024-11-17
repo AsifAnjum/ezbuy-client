@@ -20,6 +20,8 @@ export const timeAgo = (dateInput) => {
   const now = new Date();
   const date = new Date(dateInput);
 
+  if (date > now) return "few seconds ago";
+
   const seconds = Math.floor((now - date) / 1000);
 
   if (seconds < 60) return `${seconds} seconds ago`;
