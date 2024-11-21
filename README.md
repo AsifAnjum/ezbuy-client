@@ -1,5 +1,10 @@
 # EZBuy E-commerce Platform
 
+### User Credentials (Moderator)
+   email: abc@gmail.com \
+   pass:123456
+   
+
 ### Live Link: https://ezbuy-pro.vercel.app/
 
 ## Project Overview
