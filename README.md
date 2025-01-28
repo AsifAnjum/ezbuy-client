@@ -1,5 +1,7 @@
 # EZBuy E-commerce Platform
 
+## Server Repo: https://github.com/AsifAnjum/ezbuy-server
+
 ## UI Design: https://www.figma.com/community/file/1219312065205187851/full-e-commerce-website-ui-ux-design
 
 ### User Credentials (Moderator)
